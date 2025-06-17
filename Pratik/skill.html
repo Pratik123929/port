@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           #container{
+            display: grid;
+            background-color:rgb(35, 8, 61) ;
+            grid-template-rows:1fr 1fr 5fr 1fr;
+            height: 100vh;
+            grid-template-areas:'nav'
+                                'body'
+                                'head'
+                                'footer';
+        }
+        .boxes{
+            border: 1px solid whitesmoke;
+        }
+
+        .item1{
+            grid-area: nav;
+            display: flex;
+            justify-content:space-around ;
+            align-items: center;
+        }
+        .item2{
+            grid-area: body;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+    
+        }
+        .item15{
+            grid-area: head;
+            display: flex;
+            justify-content: center;
+        
+        }
+        .item3{
+            grid-area: footer;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        a:hover{
+            color: blue;
+        }
+        p{
+            color: whitesmoke;
+        }
+        .item3{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+        }
+        form{
+        font-size: medium;
+        color: whitesmoke;
+        }
+    
+        button{
+           background-color:  rgb(2, 0, 52);
+           color: whitesmoke;
+           width: 250px;
+        }
+        ul{
+            color:whitesmoke;
+            font-size: large;
+        }
+        @media(max-width:1000px){
+            a{
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div id="container">
+        <div class="boxes item1">
+             <div class="anchors"><a href="hhome.html">Home</a></div>
+            <div class="anchors"><a href="about.html">About Me</a></div>
+            <div class="anchors"><a href="skill.html">Skills</a></div>
+            <div class="anchors"><a href="contactt.html">Contact Me</a></div>
+        </div>
+        <div class="boxes item15">
+            <ul>
+                <li>
+                    Coding
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java Script</li>
+                        <li>C</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+                <li>Fine Arts</li>
+                <li>Graphic Designing</li>
+                <li>Content Creation</li>
+                <li>Script Writing</li>
+            </ul>
+        </div>
+        <div class="boxes item2">
+            <h1>My Skills:</h1>
+        </div>
+        <div class="boxes item3">
+             <p>©Copyright reserved 2025</p>
+        </div>
+    </div>
+</body>
+</html>

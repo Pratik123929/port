@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+        #container{
+    display: grid;
+    grid-template-rows: 1fr  5fr 1fr;
+    height: 100vh;
+
+}
+.boxes{
+    border: 1px solid whitesmoke;
+}
+.item1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(35, 8, 61);
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.item2{
+    display: flex;
+    background-color: rgb(35, 8, 61);
+    justify-content: center;
+    
+
+    
+    
+}
+#head{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: whitesmoke;
+}
+.item3{
+    display: flex;
+    background-color:rgb(35, 8, 61);
+    justify-content: center;
+}
+a:hover{
+    color: blue;
+}
+@media(max-width:1000px){
+p{
+    font-size: 1rem;
+}
+a{
+    font-size: 0.85rem;
+}
+}
+    
+
+    </style>
+</head>
+<body>
+     <div id="container">
+        <div class="boxes item1">
+            <div class="anchors"><a href="hhome.html">Home</a></div>
+            <div class="anchors"><a href="about.html">About Me</a></div>
+            <div class="anchors"><a href="skill.html">Skills</a></div>
+            <div class="anchors"><a href="contactt.html">Contact Me</a></div>
+        </div>
+        <div class="boxes item2" style="color: whitesmoke;">
+          <p style="font-size: 1.2rem; ">Personal Details:
+            <br><br><br><br><br>
+            Full Name: Pratik Dhungana
+            <br><br>
+            Age: 16
+            <br><br>
+            Address: Changunarayan-4,Bhaktapur
+            <br><br>
+            Hobbies: Coding, Playing, Singing
+            <br><br>
+            Education: Secondary Level
+            </p>
+        </div>
+        <div class="boxes item3">
+            <p>©Copyright reserved 2025</p>
+        </div>
+    </div>
+</body>
+</html>

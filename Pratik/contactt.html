@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #container{
+            display: grid;
+            background-color:rgb(35, 8, 61) ;
+            grid-template-rows:1fr 1fr 5fr 1fr;
+            height: 100vh;
+            grid-template-areas:'nav'
+                                'body'
+                                'head'
+                                'footer';
+        }
+        .boxes{
+            border: 1px solid whitesmoke;
+        }
+
+        .item1{
+            grid-area: nav;
+            display: flex;
+            justify-content:space-around ;
+            align-items: center;
+        }
+        .item2{
+            grid-area: body;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+    
+        }
+        .item15{
+            grid-area: head;
+            display: flex;
+            justify-content: center;
+        
+        }
+        .item3{
+            grid-area: footer;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        a:hover{
+            color: blue;
+        }
+        p{
+            color: whitesmoke;
+        }
+        .item3{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+        }
+        form{
+        font-size: medium;
+        color: whitesmoke;
+        }
+    
+        button{
+           background-color:  rgb(21, 16, 57);
+           color: whitesmoke;
+           width: 250px;
+           height: 30px;
+           border-radius: 20%;
+        }
+        @media(max-width:1000px){
+            a{
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="boxes item1">
+             <div class="anchors"><a href="hhome.html">Home</a></div>
+            <div class="anchors"><a href="about.html">About Me</a></div>
+            <div class="anchors"><a href="skill.html">Skills</a></div>
+            <div class="anchors"><a href="contactt.html">Contact Me</a></div>
+        </div>
+        <div class="boxes item15"><form action="submit">
+                <label for="">Full Name: </label>
+                <input type="text" name="" id="">
+                <br><br>
+                <label for="">Date of Birth: </label>
+                <input type="date">
+                <br><br>
+                <label for="">Gender: </label>
+                <label for="">Male:</label>
+                <input type="radio" name="gd">
+                <label for="">Female</label>
+                <input type="radio" name="gd">
+                <label for="">Others</label>
+                <input type="radio" name="gd">
+                <br><br>
+                <label for="">Contact Number: </label>
+                <input type="number">
+                <br><br>
+                <label for="">Email: </label>
+                <input type="email">
+                <br><br>
+                <label for="">Message: </label>
+                <textarea name="" id="" placeholder="Type here"></textarea>
+                <br><br><br>
+                <button>Submit</button>
+            </form></div>
+        <div class="boxes item2">
+           <h1>Contact Me:</h1>
+        </div>
+        <div class="boxes item3">
+             <p>©Copyright reserved 2025</p>
+        </div>
+    </div>
+</body>
+</html>
